@@ -11,9 +11,9 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("https://fakestoreapi.com/products")
+      .get(" https://dummyjson.com/products")
       .then((response) => {
-        setProducts(response.data);
+        setProducts(response.data.products);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
