@@ -10,13 +10,13 @@ const CartItem = ({ item, removeFromCart }) => {
           className="h-12 w-12 object-contain mr-4"
         />
         <div>
-          <h3 className="text-lg font-semibold">{item.title}</h3>
+          <h3 className="text-xs lg:text-xl font-semibold">{item.title}</h3>
           <p className="text-gray-600">${item.price}</p>
         </div>
       </div>
       <button
         onClick={() => removeFromCart(item.id)}
-        className="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded"
+        className="bg-red-500 hover:bg-red-700 text-white font-bold text-xs lg:text-lg py-2 px-3 rounded"
       >
         Remove
       </button>
