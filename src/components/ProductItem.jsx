@@ -2,7 +2,7 @@
 import { PropTypes } from "prop-types";
 const ProductItem = ({ product, addToCart }) => {
   return (
-    <div className="rounded-xl shadow-inner hover:shadow-2xl hover:shadow-gray-500 shadow-gray-300 hover:-rotate-2 hover:scale-105 transition  p-4 flex flex-col items-center  ">
+    <div className="rounded-xl shadow-inner hover:shadow-2xl hover:shadow-gray-500 shadow-gray-300 hover:-rotate-2 hover:scale-105 transition  p-4 flex flex-col items-center  mb-8">
       <img src={product.thumbnail} alt={product.title} className="h-40 mb-4 " />
       <h2 className="text-sm font-semibold mb-2 text-center ">
         {product.title}
