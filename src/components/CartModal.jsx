@@ -1,5 +1,6 @@
 import { PropTypes } from "prop-types";
 import CartItem from "./CartItem";
+import { FaDeleteLeft } from "react-icons/fa6";
 
 const CartModal = ({ cart, closeModal, removeFromCart }) => {
   return (
@@ -7,9 +8,9 @@ const CartModal = ({ cart, closeModal, removeFromCart }) => {
       <div className="bg-white p-8 rounded-lg w-3/4 lg:w-1/2">
         <button
           onClick={closeModal}
-          className=" hover:text-red-600 hover:scale-125 text-black font-bold  rounded float-right"
+          className=" hover:text-red-600  text-black font-bold text-2xl rounded float-right"
         >
-         Close
+          <FaDeleteLeft />
         </button>
         <h2 className="lg:text-2xl font-bold mb-4">Your Cart</h2>
         {cart.length === 0 ? (
