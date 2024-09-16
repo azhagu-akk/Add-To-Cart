@@ -27,7 +27,7 @@ This project is a simple e-commerce web application built using **React** and st
   
 - **Tailwind CSS**: Utility-first CSS framework for styling the application.
   
-- This project uses the **DummyJSON API** to fetch products.
+- **Fake Store API**: RESTful API used to fetch product data.
 
 
 ## Usage
