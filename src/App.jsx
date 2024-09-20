@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import CartModal from "./components/CartModal";
-import axios from "axios";
 
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+ 
   useEffect(() => {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((response) => {
-        setProducts(response.data);
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data); 
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -33,7 +33,7 @@ const App = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <Navbar cartCount={cart.length} openCart={() => setIsModalOpen(true)} />
       <ProductList products={products} addToCart={addToCart} />
       {isModalOpen && (

@@ -30,3 +30,5 @@ CartItem.propTypes = {
 };
 
 export default CartItem;
+
+
