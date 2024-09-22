@@ -1,4 +1,4 @@
-# Bowies (Fake Store React App)
+# BOWIES -  React Shopping Cart
 
 ## Demo Link : [Click Here!!!](https://bowies.netlify.app/)
 
